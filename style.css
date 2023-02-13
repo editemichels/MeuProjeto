@@ -1,0 +1,70 @@
+/* pode fazer o agrupamento de varios seletores, usando a virgula
+body, p, a{ como o p e o a estão dentro do body, posso tira-los daqui
+*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* alinha todo o conteudo do body ao centro*/
+    text-align: center; 
+    /*padrão dos navegadores é 8*/
+    margin: 0; 
+}
+
+#hero {
+    width: 592px;
+    /*quando especifica o tamanho da caixa, o texto fica alinhado dentro da caixa
+    mas a caixa não fica a tela, por isto usar a propriedade
+    margin: auto;*/
+    /* 0 é a margin top, o auto é para as laterais e o 72 para o bottom*/
+    margin: 0 auto 72px;
+}
+
+#hero img {
+    margin-bottom: 72px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+    
+    margin-bottom: 32px;
+
+   
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+
+span , a {
+    color:  #FF9900;
+}
+
+p , #footer {
+    color: #7D7987 ;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+/*aplica somente onde encontra um a anterior*/
+#footer a + a {
+    margin-left: 28px;
+}
+
+.line {
+    width: 568px;
+    height: 0px;
+
+    margin: 0 auto 8px;
+
+    border: 1px solid #ECEFF2 ;
+}
+
+#balls {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+  }
+
